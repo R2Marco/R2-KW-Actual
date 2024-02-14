@@ -1,0 +1,13 @@
+<html>
+<body>
+<script>
+function calcSem() {
+    var fA = new Date();
+    var dA = Math.floor((fA - new Date(fA.getFullYear(), 0, 0)) / 86400000);
+    var semana = Math.ceil((dA + 1) / 7);
+    document.body.innerHTML = "KW actual: " + semana;
+}
+calcSem();
+</script>
+</body>
+</html>
